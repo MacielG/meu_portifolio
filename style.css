@@ -1,0 +1,140 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+    background-color: #000; /* Cor de fundo preta */
+    color: #fff; /* Cor do texto branca */
+    font-weight: bold; /* Texto em negrito */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo preta com transparência */
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Mantém o menu fixo no topo */
+    width: 100%;
+    z-index: 100; /* Garante que o menu fique acima do conteúdo */
+    backdrop-filter: blur(10px); /* Adiciona efeito de blur no menu */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Sombra branca */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff; /* Cor do link branca */
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave nos links */
+}
+
+nav a:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3); /* Sombra branca mais intensa */
+}
+
+main {
+    width: 100vw; /* Largura da viewport */
+    transition: transform 0.5s ease-in-out; /* Efeito de transição suave */
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Altura da viewport */
+    width: 100vw; /* Largura da viewport */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+}
+
+#sobre {
+    background-color: #111;
+}
+
+#habilidades {
+    background-color: #222;
+}
+
+#projetos {
+    background-color: #333;
+}
+
+#contato {
+    background-color: #444;
+}
+
+/* Estilo para o formulário de contato */
+#contato form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#contato label {
+    margin-bottom: 5px;
+}
+
+#contato input, #contato button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #222; /* Cor de fundo dos inputs */
+    color: #fff; /* Cor do texto dos inputs */
+    border-color: #fff; /* Cor da borda dos inputs */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.profile-pic {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 20px; 
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px; 
+}
+
+.whatsapp-button img {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px; 
+}
+
+.projeto {
+    margin-bottom: 40px; 
+}
+
+.projeto img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
