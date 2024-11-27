@@ -1,4 +1,4 @@
 <?php
-    header("Location: index.html");
-    exit();
+  header("Location: index.html");
+  exit();
 ?>
